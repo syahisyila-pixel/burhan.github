@@ -1,0 +1,73 @@
+.jumbotron img{
+    width: 100px;
+    border: 5px solid #888;
+}
+.about hr {
+    width: 250px;
+    border-top: 4px solid #666;
+
+}
+html {
+    position: relative;
+}
+
+body {
+    /* Margin bawah untuk memberi ruang bagi footer (harus sama dengan tinggi footer) */
+    margin-bottom: 120px; 
+}
+
+section {
+    /* Tinggi minimum untuk mencegah section terlalu pendek, membuat jarak antar konten lebih baik */
+    min-height: 600px;
+    padding-top: 50px;
+}
+
+/* HR di dalam section about */
+.about hr {
+    width: 250px;
+    border-top: 3px solid #999;
+    /* Menggeser HR ke tengah karena di HTML-nya sudah diberi text-align: center */
+    margin-top: 5px; 
+    margin-bottom: 30px;
+}
+
+#portofolio img {
+    width: 100%;
+    max-width: 300px; /* Membatasi agar tidak terlalu raksasa */
+    height: auto;
+}
+footer {
+    /* Agar footer selalu di bawah (Fixed Footer) */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    /* Tinggi footer (harus sama dengan margin-bottom di body) */
+    height: 120px; 
+    
+    padding-top: 30px;
+    
+    /* Warna latar belakang abu-abu tua */
+    background-color: #333; 
+}
+
+footer p {
+    color: #aaa;
+    /* Mengatur ukuran font paragraf di footer */
+    font-size: 0.9em; 
+}
+
+/* Styling tautan (link) di dalam paragraf footer */
+footer p a {
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Styling ikon (heart) di footer */
+footer p i {
+    color: salmon;
+}
+.contact .row:last-child {
+  display: flex;
+  justify-content: center;
+}
